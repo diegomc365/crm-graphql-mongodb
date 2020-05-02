@@ -1,0 +1,29 @@
+{
+  "name": "crm-graphql-mongodb",
+  "version": "1.0.0",
+  "description": "CRM backend created with GraphQL, Apollo Server and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegomc365/crm-graphql-mongodb.git"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "author": "Diego Matienzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegomc365/crm-graphql-mongodb/issues"
+  },
+  "homepage": "https://github.com/diegomc365/crm-graphql-mongodb#readme",
+  "dependencies": {
+    "apollo-server": "^2.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
