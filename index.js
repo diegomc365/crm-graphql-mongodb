@@ -1,6 +1,10 @@
 const {ApolloServer} = require('apollo-server');
 const typeDefs = require('./db/schema');
-const resolvers = require('./db/resolvers')
+const resolvers = require('./db/resolvers');
+const connectDB = require('./config/db');
+
+// connect to the db
+connectDB();
 
 // server
 const server = new ApolloServer({
@@ -10,5 +14,5 @@ const server = new ApolloServer({
 
 // start up server
 server.listen().then( ({url})=> {
-    console.log(`Servidor listo en la URL ${url}`)
+    console.log(`Server ready at URL ${url}`)
 })
