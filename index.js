@@ -8,7 +8,7 @@ require('dotenv').config({ path: 'variables.env'});
 // connect to the db
 connectDB();
 
-// server
+// server apollo
 const server = new ApolloServer({
     typeDefs,
     resolvers,
